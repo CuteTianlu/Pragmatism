@@ -58,7 +58,8 @@ import static mindustry.type.ItemStack.with;
 public class modBlocks {
     public static Block //注册方块
         Heat_Extractor,//热力提取机
-        Chemical_Power_Plant;//蒸汽发电机
+        Chemical_Power_Plant,//蒸汽发电机
+        Plasma_Heavy_Mining_Machine;//等离子重型采矿机
     public static void load(){//建筑
         //生产-电力
         Heat_Extractor = new ThermalEnergyExtraction("热力提取机") {{
@@ -85,6 +86,21 @@ public class modBlocks {
             outputLiquid = new LiquidStack(water, 1f);
             itemDuration = 120f;
             consumeLiquids(LiquidStack.with(ozone, 8f/60f, arkycite, 160f/60f)); 
+        }};
+        //生产-开采
+        Plasma_Heavy_Mining_Machine = new BeamDrill("等离子重型采矿机"){{
+            requirements(production, with(tungsten, 180, silicon, 65, carbide, 10, oxide, 85));
+            consumePower(1.2f);
+            drillTime = 50f;
+
+            tier = 5;
+            size = 3;
+            range = 8;
+            fogRadius = 4;
+            laserWidth = 0.7f;
+            itemCapacity = 45;
+
+            consumeLiquids(LiquidStack.with(hydrogen, 3f/60f, nitrogen, 2f/60f)).boost(); 
         }};
     }
 }
