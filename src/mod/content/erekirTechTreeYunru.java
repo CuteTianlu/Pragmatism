@@ -27,6 +27,10 @@ public class erekirTechTreeYunru {
             node(modBlocks.Chemical_Power_Plant, () -> {
             });
         });
+        addToNode(Blocks.largePlasmaBore, () -> {
+            node(modBlocks.Plasma_Heavy_Mining_Machine, () -> {
+            });
+        });
     };
     //谢谢更多实用设备要不然我还真不知道怎么写这个东西PS:更多实用设备的源代码
     public static void addToNode(UnlockableContent p, Runnable c) {
