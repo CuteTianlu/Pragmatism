@@ -87,7 +87,7 @@ public class modBlocks {
             itemDuration = 120f;
             consumeLiquids(LiquidStack.with(ozone, 8f/60f, arkycite, 160f/60f)); 
         }};
-        //生产-开采
+                //生产-开采
         Plasma_Heavy_Mining_Machine = new BeamDrill("等离子重型采矿机"){{
             requirements(production, with(tungsten, 180, silicon, 65, carbide, 10, oxide, 85));
             consumePower(1.2f);
@@ -102,5 +102,9 @@ public class modBlocks {
 
             consumeLiquids(LiquidStack.with(hydrogen, 3f/60f, nitrogen, 2f/60f)).boost(); 
         }};
+        ((BeamDrill)Blocks.plasmaBore).drillTime = 96f;
+        ((BeamDrill)Blocks.largePlasmaBore).drillTime = 90f;
+        ((BeamDrill)Blocks.largePlasmaBore).itemCapacity = 30;
+        ((BurstDrill)Blocks.eruptionDrill).drillTime = 250;
     }
 }
