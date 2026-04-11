@@ -1,0 +1,23 @@
+#the mod name as displayed in-game
+displayName: "实用主义"
+
+#the internal name of your mod
+name: "实用主义奇才"
+
+#your name
+author: "超可爱的天禄"
+
+#the fully qualified main class of the mod
+main: "mod.奇才"
+
+#the mod description as seen in the mod dialog
+description: "实用主义是超可爱的天禄给他朋友制作的模组"
+
+#the mod version
+version: 0.1
+
+#the minimum game build required to run this mod
+minGameVersion: 155
+
+#this is a java mod
+java: true
