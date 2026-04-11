@@ -47,7 +47,9 @@ import mindustry.type.ItemStack;
 import mindustry.world.Block;
 import mindustry.world.draw.*;
 import mindustry.world.meta.Env;
+import mindustry.world.blocks.production.BeamDrill;
 import mod.wored.blocks.ThermalEnergyExtraction;
+import mindustry.content.Blocks;
 
 import static mindustry.content.Items.*;
 import static mod.content.modItems.*;
