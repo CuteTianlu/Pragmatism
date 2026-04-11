@@ -58,7 +58,7 @@ import static mindustry.type.ItemStack.with;
 public class modBlocks {
     public static Block //注册方块
         Heat_Extractor,//热力提取机
-        Chemical_Power_Plant,//蒸汽发电机
+        Chemical_Power_Plant,//化学发电厂
         Plasma_Heavy_Mining_Machine;//等离子重型采矿机
     public static void load(){//建筑
         //生产-电力
