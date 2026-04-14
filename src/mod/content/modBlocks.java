@@ -104,6 +104,8 @@ public class modBlocks {
 
             consumeLiquids(LiquidStack.with(hydrogen, 3f/60f, nitrogen, 2f/60f)).boost(); 
         }};
+        ((BeamDrill)Blocks.reinforcedVault).coreMerge = true;
+        ((BeamDrill)Blocks.reinforcedContainer).coreMerge = true;
         ((BeamDrill)Blocks.plasmaBore).drillTime = 96f;
         ((BeamDrill)Blocks.largePlasmaBore).drillTime = 90f;
         ((BeamDrill)Blocks.largePlasmaBore).itemCapacity = 30;
